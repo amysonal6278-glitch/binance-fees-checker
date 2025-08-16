@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binance Fee Checker</title>
+  <!-- Binance Plex Font -->
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/binance-plex">
+  <link rel="stylesheet" href="cex.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">
+        <img height="29" src="Binance png.png" alt="binance logo">
+        <!-- <div class="logo-text">Binance</div> -->
+      </a>
+      <div class="nav-links">
+        <a href="https://www.binance.com/en/markets/overview" class="nav-link">Markets</a>
+        <a href="https://www.binance.com/en/trade" class="nav-link">Trade</a>
+        <a href="#" class="nav-link active">Fees</a>
+       <a href="https://www.binance.com/en/earn" class="nav-link">Earn</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="coin-icon">$</div>
+      <h1 class="card-title">Check Your Fees</h1>
+      <div class="input-group">
+        <label class="input-label" for="coin">Coin Name</label>
+        <input type="text" id="coin" class="input-field" placeholder="e.g., BTC, ETH, SOL">
+        <div class="input-icon">⌨</div>
+      </div>
+      <button id="check-btn" class="btn">Check Fees</button>
+    </div>
+
+    <div id="result-card" class="result-card">
+      <div class="result-header">
+        <div class="result-title">Fee Details <span class="badge">LIVE</span></div>
+      </div>
+      <div class="result-content">
+        <div class="result-item">
+          <div class="result-label">Date:</div>
+          <div id="result-date" class="result-value">-</div>
+        </div>
+        <div class="result-item">
+          <div class="result-label">Coin:</div>
+          <div id="result-coin" class="result-value">-</div>
+        </div>
+        <div class="result-item">
+          <div class="result-label">Trading Pair:</div>
+          <div id="result-pair" class="result-value">-</div>
+        </div>
+      </div>
+      <div id="fee-value" class="fee-value">-</div>
+      <div class="fee-message">🚨 Please pay this fee to CEX Fees Foundation</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Binance. All rights reserved.</p>
+  </footer>
+
+<script src="cex.js"></script>
+</body>
+</html>
